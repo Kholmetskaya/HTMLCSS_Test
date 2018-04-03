@@ -1,4 +1,4 @@
-/*
+﻿/*
  * 
  * Определяем переменные 
  *
@@ -66,4 +66,7 @@ gulp.task('watch', function () {
     // При изменение любых шрифтов файлов  запускаем задачу font
     gulp.watch('./assets/font/*', ['font']);
 });
+
+// Default Task
+gulp.task('default', ['css', 'js', 'images', 'font', 'minify', 'watch']);
 
